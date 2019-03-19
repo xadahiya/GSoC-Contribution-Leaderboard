@@ -309,7 +309,7 @@ def sortUser(_User, key):
     rank = 1
     previous = None
     entries = list(all_list)
-    previous = entries[0]
+    previous = entries[-1]
     previous['rank'] = 1
     for i, entry in enumerate(entries[1:]):
         if entry['count'] != previous['count']:
